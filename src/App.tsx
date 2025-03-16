@@ -1,11 +1,14 @@
 import React from "react";
 import AppRouter from "./routes/Router";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const App: React.FC = () => {
   return (
-    <div>
-      <AppRouter />
-    </div>
+    <ThemeProvider>
+      <div>
+        <AppRouter />
+      </div>
+    </ThemeProvider>
   );
 };
 
